@@ -9,10 +9,10 @@ class Dist_yl6709(BaseDistribution):
 
 
 	def pdf(self, x):
-		return (np.exp(np.pi/2)+np.exp(-np.pi/2))/2*np.cos(x)*np.exp(x)
+		return np.cos(x)*np.exp(x)/(np.exp(np.pi/2)+np.exp(-np.pi/2))*2
 
 	def mean(self):
 		return 0.440659519978
 
 	def std(self):
-		return 0.253930016136
+		return 0.626020165626
